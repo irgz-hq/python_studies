@@ -1,0 +1,5 @@
+In Python you can print
+In Python you can make loops
+In Python you can make functions
+In Python you can make class
+In Python you can objects
