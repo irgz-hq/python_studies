@@ -1,0 +1,11 @@
+# Arquivos temporários
+*.pyc
+__pycache__/
+
+# Ambiente virtual
+env/
+venv/
+
+# Python local instalado pelo pyenv
+.python-version
+
