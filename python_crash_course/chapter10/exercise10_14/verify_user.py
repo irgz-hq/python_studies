@@ -12,9 +12,11 @@ def get_stored_username(path):
     else:
         return None
 
-def get_new_username(path):
+def get_new_username(path, username = ""):
     """Prompt for a new username."""
-    username = input("What is your name? ")
+    if not username:
+        username = input("What is your name? ")
+    
     contents = json.dumps(username)
     path.write_text(contents)
     return username
@@ -31,7 +33,8 @@ def greet_user():
         if username == username2:
             print(f"Welcome back, {username}!")
         else:
-            print("You arent autorized to enter! ")
+            print("You need to register a new username!")
+            username = get_new_username(path, username2)
     else:
         username = get_new_username(path)
         print(f"We'll remember you when you come back, {username}!")
