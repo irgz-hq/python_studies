@@ -3,9 +3,9 @@
     return string"""
 
 
-def city_country(city, country, population):
+def city_country(city, country, population=''):
     if population:
         string = f"{city.title()}, {country.title()} - population {population}"
     else:
-        string = f"{city}, {country}"
+        string = f"{city}, {country}".title()
     return string
