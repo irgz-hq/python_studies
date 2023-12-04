@@ -1,0 +1,1 @@
+sudo dnf install python3 python3-devel python3-pip python3-virtualenv python3-idle gcc mysql-devel openssl-devel curl git pycharm-community -y

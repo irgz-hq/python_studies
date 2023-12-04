@@ -1,0 +1,10 @@
+Linha 1
+Linha 2
+Linha 3
+
+if 20 > 10 and 15 > 10:
+    True
+else:
+    False
+
+if not 20 > 10 and
