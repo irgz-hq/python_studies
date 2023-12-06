@@ -5,7 +5,8 @@
 # r (leitura), w (escrita), x (para criação)
 # a (escreve ao final), b (binário)
 # t (modo texto), + (leitura e escrita)
-# Context manager - with (abre e fecha)
+# Context manager - with (abre e fecha) !!!importante 
+############# paralelo com iterator com métodos next e iter
 # Métodos úteis
 # write, read (escrever e ler)
 # writelines (escrever várias linhas)

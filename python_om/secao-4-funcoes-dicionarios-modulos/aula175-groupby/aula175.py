@@ -19,7 +19,9 @@ def ordena(aluno):
 
 
 alunos_agrupados = sorted(alunos, key=ordena)
+print(alunos_agrupados)
 grupos = groupby(alunos_agrupados, key=ordena)
+print(grupos)
 
 for chave, grupo in grupos:
     print(chave)

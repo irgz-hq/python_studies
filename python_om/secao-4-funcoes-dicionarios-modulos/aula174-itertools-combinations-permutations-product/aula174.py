@@ -2,6 +2,9 @@
 # Combinação - Ordem não importa - iterável + tamanho do grupo
 # Permutação - Ordem importa
 # Produto - Ordem importa e repete valores únicos
+
+# permutation é tipo arranjo onde a ordem importa
+# 
 from itertools import combinations, permutations, product
 
 
