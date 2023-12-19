@@ -1,3 +1,0 @@
-Sucess: que legal (LogFileMixin)
-Error: qualquer coisa (LogFileMixin)
-Sucess: que legal (LogFileMixin)
