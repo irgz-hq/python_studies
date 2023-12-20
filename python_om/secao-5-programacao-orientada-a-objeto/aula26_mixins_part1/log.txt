@@ -1,0 +1,6 @@
+Error: msg do file (LogFileMixin)
+Error: msg do file (LogFileMixin)
+Error: msg do file (LogFileMixin)
+Success: vencemos (filezada) (LogFileMixin)
+Success: Galaxy S está ligado (Smartphone)
+Error: iPhone está desligado (Smartphone)
