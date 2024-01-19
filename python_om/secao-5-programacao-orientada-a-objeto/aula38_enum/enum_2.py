@@ -3,7 +3,7 @@
 # valor = Classe.chave.value
 import enum
 
-def mover(direcao):
+def mover(direcao: str):
     print(f'Movendo para {direcao}')
 # Direcoes = enum.Enum('Direcoes', ['ESQUERDA', 'DIREITA'])
 
@@ -23,14 +23,14 @@ print(Direcoes(1), Direcoes['ESQUERDA'], Direcoes.ESQUERDA)
 print(Direcoes(1).name, Direcoes.ESQUERDA.value, '#####')
 
 
-def mover(direcao: Direcoes):
+def mover_(direcao: Direcoes):
     if not isinstance(direcao, Direcoes):
         raise ValueError('Direção não encontrada')
 
     print(f'Movendo para {direcao.name} ({direcao.value})')
 
 
-mover(Direcoes.ESQUERDA)
-mover(Direcoes.DIREITA)
-mover(Direcoes.ACIMA)
-mover(Direcoes.ABAIXO)
+mover_(Direcoes.ESQUERDA)
+mover_(Direcoes.DIREITA)
+mover_(Direcoes.ACIMA)
+mover_(Direcoes.ABAIXO)
