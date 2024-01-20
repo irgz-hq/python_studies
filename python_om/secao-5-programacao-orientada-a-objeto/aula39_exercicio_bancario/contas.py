@@ -32,6 +32,11 @@ class ContaPoupanca(Conta):
         print('Não foi possível sacar o valor desejado!')
         self.detalhes(f'(SAQUE NEGADO {valor})')
         return self.saldo
+    
+    def __repr__(self):
+        class_name = type(self).__name__
+        attrs = f'({self.agencia!r}, {self.conta!r}, {self.saldo!r})'
+        return f'{class_name}{attrs}'
 
 class ContaCorrente(Conta):
     def __init__(self, agencia: int, conta: int, saldo: float=0, limite: float=0):
@@ -52,6 +57,10 @@ class ContaCorrente(Conta):
         self.detalhes(f'(SAQUE NEGADO {valor:.2f})')
         return self.saldo
     
+    def __repr__(self):
+        class_name = type(self).__name__
+        attrs = f'({self.agencia!r}, {self.conta!r}, {self.saldo!r}, {self.limite!r})'
+        return f'{class_name}{attrs}'
 
 if __name__ == '__main__':
     cp1 = ContaPoupanca(111,222)
